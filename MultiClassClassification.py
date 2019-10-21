@@ -34,7 +34,7 @@ class AI():
             cost += y_binary * np.log(y_hat) + (1 - y_binary) * np.log(1 - y_hat)
         return cost
 
-    def train(self, x_train, label, print_iter = 5000):
+    def train(self, x_train, label):
 
         iteration = 1
         while iteration < self.max_iterations:
